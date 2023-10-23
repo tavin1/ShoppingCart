@@ -1,0 +1,30 @@
+.search-bar {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  max-width: 500px;
+  justify-content: space-between;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  gap: 13px; /*Cria um espaçamento entre o input e o button*/
+  padding-right: 13px; /*Cria um espaçamento entre o button e a parte direita da tela*/
+}
+
+.search_input {
+  padding: 13px;
+  flex-grow: 1; /* preenchhe a tela conforme ela cresce*/
+  border: none; /*retiro as bordas pretas ao clicar*/
+  outline: none; /*retiro as linhas pretas ao clicar*/
+  font-size: 0.8rem;
+  font-weight: 500px;
+  border-right: 1px solid #ddd; /*fica um corte pequeno para realizar a separação */
+}
+
+.search_button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center; /*alinha todos os items*/
+  justify-content: center; /*alinha todos os items*/
+  color: #333;
+}
