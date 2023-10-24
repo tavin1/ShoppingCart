@@ -10,7 +10,7 @@ import AppContext from '../../context/AppContext';
 function CartItem({data}) {
 
   const { cartItems, setCartItems } = useContext(AppContext);
-  const { id, thumbnail, title, price} = data;
+  const { id, thumbnail, title, price, permalink} = data;
 
   const handleRemoveItem = () => {
     const updateItems = cartItems.filter((item) => item.id != id);
@@ -27,6 +27,7 @@ function CartItem({data}) {
       <div className="cart-item-content">
         <h3 className="cart-item-title">{title}</h3>
         <h3 className="cart-item-price">{formatCurrency(price, 'BRL')}</h3>
+        <a href={permalink} className="perma__link">{permalink}</a>
 
         <button
           type="button"
